@@ -29,6 +29,10 @@ module.exports = (sequelize, Sequelize) => {
     token: {
       type: Sequelize.STRING
     },
+    is_admin: {
+      type: Sequelize.TINYINT,
+      defaultValue: 0
+    },
     created_at: {
       type: 'DATETIME',
       defaultValue: Sequelize.DataTypes.NOW,
